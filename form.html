@@ -8,7 +8,7 @@
 
 <form action="">
 <fieldset>
-  <p>favorite color?</p>
+  <p class="form-labels">Favorite color?</p>
  <input type="radio" id="red" name="color" value="red">
  <label for="red">red</label>
  <br>
@@ -20,17 +20,17 @@
 </fieldset>
  <br>
  <fieldset>
- <label for="email">Email:</label>
+ <label class="form-labels" for="email">Email:</label>
  <input type="email" id="email" name="email">
 </fieldset>
  <br>
  <fieldset>
- <label for="name">Name:</label>
+ <label class="form-labels" for="name">Name:</label>
  <input type="text" id="name" name="name">
 </fieldset>
  <br>
  <fieldset>
- <p>checkbox</p>
+ <p class="form-labels">Checkbox</p>
  <label for="checkBox">one</label>
  <br>
  <input type="checkbox" value="one" id="one" name="checkBox">
@@ -49,9 +49,9 @@
  <br>
 
 </fieldset>
-
+<br>
 <fieldset>
-  <label for="food">Favorite Food</label>
+  <label class="form-labels" for="food">Favorite Food</label>
   <br>
 <select name="food" id="food">
   <option value="pizza">pizza</option>
@@ -59,6 +59,7 @@
   <option value="wings">wings</option>
 </select>
 </fieldset>
+<br>
 <div class="flex-container-submit">
   <input type="submit" value="Send" id="submit">
 </div>

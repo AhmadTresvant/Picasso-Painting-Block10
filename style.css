@@ -2,7 +2,11 @@ html,body {
   margin: 0;
   padding:0;
 }
-
+.form-labels{
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
 .flex-container-submit{
 display: flex;
 height: 50px;
