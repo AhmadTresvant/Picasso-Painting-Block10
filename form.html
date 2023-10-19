@@ -7,6 +7,7 @@
     <a href="index.html"> Home</a>
 
 <form action="">
+<fieldset>
   <p>favorite color?</p>
  <input type="radio" id="red" name="color" value="red">
  <label for="red">red</label>
@@ -16,14 +17,53 @@
  <br>
  <input type="radio" id="blue" name="color" value="blue">
  <label for="blue">blue</label>
+</fieldset>
  <br>
+ <fieldset>
  <label for="email">Email:</label>
  <input type="email" id="email">
+</fieldset>
  <br>
+ <fieldset>
  <label for="name">Name:</label>
  <input type="text" id="name">
+</fieldset>
  <br>
- <input type="submit" value="Send">
+ <fieldset>
+ <p>checkbox</p>
+ <label for="checkBox">one</label>
+ <br>
+ <input type="checkbox" value="one">
+ <br>
+ <label for="checkBox">two</label>
+ <br>
+ <input type="checkbox" value="two" id="two">
+ <br>
+ <label for="checkBox">three</label>
+ <br>
+ <input type="checkbox" value="three">
+ <br>
+ <label for="checkBox">four</label>
+ <br>
+ <input type="checkbox" value four>
+ <br>
+
+</fieldset>
+
+<fieldset>
+  <label for="food">Favorite Food</label>
+  <br>
+<select name="food" id="food">
+  <option value="pizza">pizza</option>
+  <option value="burgers">burgers</option>
+  <option value="wings">wings</option>
+</select>
+</fieldset>
+<input type="submit" value="Send">
+
+<p>
+  only the radio box and drop down menu are subtmitting info to url still working on the other forms.
+</p>
 </form>
   </body>
 </html>
