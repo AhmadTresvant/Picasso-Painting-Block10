@@ -1,5 +1,5 @@
 * {
-  border: solid red 1px;
+  border: solid black 1px;
 }
  
 html,body {
@@ -10,72 +10,75 @@ html,body {
 .flex-container {
   display: flex;
   flex-direction: row;
-  height: 15vh;
+  height: 30vh;
   width: 100vw;
-  justify-content: space-around;
-  margin-bottom: 22%;
+  justify-content: start;
+  align-items:start;
+  gap: 25px; 
 }
 
 .flex-container-two {
   display: flex;
   flex-direction: row;
-  height: 15vh;
+  height: 30vh;
   width: 100vw;
-  justify-content: space-around;
-  margin-bottom: 22%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .flex-container-three {
   display: flex;
   flex-direction: row;
-  height: 15vh;
+  height: 30vh;
   width: 100vw;
-  justify-content: space-around;
- 
+  justify-content: end;
+  align-items: end;
+  gap: 5px;
 }
 
-.item {
-  
-}
-
-.square {
+#square {
   width: 100px;
   height: 100px;
-  background: red;
+  background: grey;
+  transform: scale(1.5);
 }
 
-.circle {
+#circle {
   width: 100px;
   height: 100px;
-  background: red;
-  border-radius: 50%
+  background: orange;
+  border-radius: 50%;
+  z-index: 3;
+  transform: scale(1);
 }
 
-.triangle {
+#triangle {
   width: 0;
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 100px solid red;
+  border-bottom: 100px solid purple;
+  z-index: 2;
+  transform: scale(2);
 }
 
-
-
-
-
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1680px),
+ screen and (max-height:1050px) {
   body{
     background-color: yellow;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px),
+ screen and (max-height:768) {
   body{
     background-color: blue;
   } 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px),
+ screen and (max-height:320) {
   body{
     background-color: green;
   }
