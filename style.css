@@ -38,16 +38,16 @@ html,body {
 }
 
 #square {
-  width: 100px;
   height: 100px;
-  background: grey;
-  transform: scale(1.5);
+  width: 100px;
+  background-color: red;
+  transform: scale(1);
 }
 
 #circle {
   width: 100px;
   height: 100px;
-  background: orange;
+  background: green;
   border-radius: 50%;
   z-index: 3;
   transform: scale(1);
@@ -58,28 +58,34 @@ html,body {
   height: 0;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 100px solid purple;
+  border-bottom: 100px solid blue;
   z-index: 2;
   transform: scale(2);
+}
+
+.small-sqaure {
+  height: 50px;
+  width: 50px;
+  background-color: red;
 }
 
 @media screen and (max-width: 1680px),
  screen and (max-height:1050px) {
   body{
-    background-color: yellow;
+    background-color: palegoldenrod;
   }
 }
 
 @media (max-width: 1024px),
  screen and (max-height:768) {
   body{
-    background-color: blue;
+    background-color: yellow;
   } 
 }
 
 @media (max-width: 480px),
  screen and (max-height:320) {
   body{
-    background-color: green;
+    background-color: salmon;
   }
 }
